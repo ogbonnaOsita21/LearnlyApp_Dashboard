@@ -1,0 +1,169 @@
+.sidebar {
+  width: 280px;
+  padding: 36px 20px;
+  transition: var(--transition-default);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar-toggler {
+  cursor: pointer;
+}
+
+.sidebar-toggler img {
+  width: 20px;
+}
+.content-top-title {
+  color: var(--clr-dark);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 16px;
+  height: 15%;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-name {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--clr-dark);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.info-email {
+  font-size: 0.7rem;
+}
+
+.info-img {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 20%;
+  background-color: var(--clr-blue);
+}
+
+.navigation {
+  margin-top: 28px;
+  height: 70%;
+}
+
+.sidebar-change {
+  margin-left: 0px;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+  margin-right: 4px;
+}
+
+.nav-link {
+  display: block;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px 14px;
+  column-gap: 12px;
+  letter-spacing: 0.03em;
+  border: 1px solid transparent;
+  transition: var(--transition-default);
+}
+
+.nav-link-icon {
+  width: 15px;
+}
+
+.nav-link-text {
+  text-transform: capitalize;
+  position: relative;
+}
+
+.nav-link-text.active:after {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-red);
+  height: 3px;
+  width: 30%;
+  left: 0;
+  bottom: -10px;
+}
+
+.nav-link-text:after {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-red);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: var(--transition-default);
+}
+
+.nav-link-text:hover:after {
+  width: 30%;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .sidebar {
+    padding: 24px 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    position: fixed;
+    background-color: var(--clr-primary);
+    padding: 20px 20px 36px;
+    height: 100vh;
+    z-index: 5;
+    margin-left: -280px;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: end;
+  }
+
+  .sidebar-change {
+    margin-left: 0;
+  }
+
+  .nav-item {
+    /* display: none; */
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+
+  .nav-link.active {
+    border-radius: 100%;
+  }
+
+  .nav-link:hover {
+    border-radius: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sidebar {
+    margin-left: -280px;
+  }
+  .sidebar-change {
+    margin-left: 0;
+  }
+}

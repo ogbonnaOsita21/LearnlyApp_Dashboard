@@ -1,0 +1,80 @@
+.account-info {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.account-content {
+  background-color: var(--clr-white);
+  border-radius: 1.5rem;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+  height: 100%;
+  width: 90%;
+}
+
+.account-info-header {
+  text-align: center;
+  font-weight: normal;
+}
+
+.account-info-body {
+  display: flex;
+  height: 80%;
+}
+
+.account-info-img {
+  width: 50%;
+  position: relative;
+  transform: translate(-80px, 20px);
+}
+
+.account-info-img img {
+  width: 150%;
+}
+.account-info-details {
+  width: 50%;
+  color: var(--clr-gray);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* height: 100%; */
+}
+
+.account-info-details button {
+  align-self: flex-end;
+}
+
+.account-info-details img {
+  width: 15px;
+}
+
+.account-info-details button {
+  background-color: var(--clr-dark);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 850px) {
+  .account-info-img {
+    width: 50%;
+    position: relative;
+    transform: translate(-60%, 15%);
+  }
+
+  .account-info-header {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .account-info-img {
+    width: 50%;
+    position: relative;
+    transform: translate(-60%, 15%);
+  }
+
+  .account-info-header {
+    font-size: 1.3rem;
+  }
+}

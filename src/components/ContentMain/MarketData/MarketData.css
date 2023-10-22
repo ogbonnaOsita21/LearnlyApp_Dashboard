@@ -1,0 +1,111 @@
+.market-data-table {
+  width: 100%;
+  border: solid 1px var(--clr-skyblue);
+  padding: 0;
+}
+
+.row-header img {
+  margin-right: 5px;
+  padding: 5px;
+  background-color: var(--clr-secondary);
+  border-radius: 50%;
+  width: 25px;
+}
+
+.market-data-table thead {
+  color: #fefefe;
+  display: none;
+}
+.market-data-table tbody {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.market-data-table tbody td {
+  background-color: #fefefe;
+  display: block;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: right;
+  border-bottom: solid 1px var(--clr-skyblue);
+}
+.market-data-table tbody td::before {
+  content: attr(aria-label);
+  font-weight: 600;
+  min-width: 80px;
+  float: left;
+  text-align: left;
+  color: var(--clr-dark);
+}
+
+img {
+  width: 15px;
+}
+
+.market-data-table tbody td:first-child {
+  background-color: var(--clr-skyblue);
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.market-data-table tbody td:first-child::before {
+  display: none;
+}
+.market-data-table tr {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .market-data-table tr {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .market-data-table thead {
+    display: table-header-group;
+  }
+  .market-data-table thead th {
+    color: var(--clr-gray);
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding-left: 10px;
+  }
+  .market-data-table tbody {
+    display: table-row-group;
+  }
+  .market-data-table tbody td {
+    background-color: transparent;
+    display: table-cell;
+    text-align: left;
+    width: auto;
+    font-size: 1.2rem;
+  }
+  .market-data-table tbody td::before {
+    display: none;
+  }
+  .market-data-table tbody td:first-child {
+    border-left: solid 3px var(--clr-skyblue);
+    background-color: transparent;
+    color: inherit;
+  }
+  .market-data-table tr {
+    display: table-row;
+    margin: 0;
+  }
+
+  .market-data-table {
+    border: none;
+  }
+
+  .market-data-table tbody td {
+    border-bottom: none;
+  }
+}

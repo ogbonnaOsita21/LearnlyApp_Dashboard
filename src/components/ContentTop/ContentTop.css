@@ -1,0 +1,149 @@
+/* main content top */
+.main-content-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.sidebar-toggler {
+  display: none;
+  align-items: center;
+  margin-right: 12px;
+}
+.sidebar-toggler img {
+  width: 20px;
+}
+.content-top-title {
+  color: var(--clr-dark);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.content-top-btns {
+  display: flex;
+  align-items: center;
+}
+.content-top-btn {
+  margin-left: 18px;
+  transition: var(--transition-default);
+}
+.content-top-btn img {
+  width: 24px;
+}
+
+.plus-circle-btn img {
+  width: 36px;
+}
+.content-top-btn img:hover {
+  filter: brightness(0) invert(0.1);
+  scale: 1.05;
+}
+
+.content-top-left {
+  display: flex;
+  align-items: center;
+}
+
+.content-top-msg img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.content-top-msg span {
+  font-weight: 600;
+}
+
+.content-top-wallet {
+  margin: 0 20px;
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.content-top-wallet:hover {
+  color: var(--clr-black);
+}
+
+.content-top-wallet img {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.content-top-wallet span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Wallet Dropdown Menu */
+.wallet-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 10;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.dropdown-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Notification button indicator */
+.notification-btn {
+  position: relative;
+}
+
+.notification-btn-dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: var(--clr-red);
+  border-radius: 50%;
+  right: 3px;
+  top: 1px;
+}
+@media screen and (max-width: 1200px) {
+  .sidebar-toggler {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-top-msg {
+    display: none;
+  }
+}

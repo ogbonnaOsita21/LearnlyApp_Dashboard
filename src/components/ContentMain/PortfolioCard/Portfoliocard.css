@@ -1,0 +1,59 @@
+.portfolio-card {
+  background-color: var(--clr-white);
+  padding: 20px;
+  border-radius: 1.5rem;
+  color: var(--clr-dark);
+  border: solid 1px var(--clr-gray);
+  transition: var(--transition-default);
+}
+
+.portfolio-card:hover {
+    background-color: var(--clr-lightGray);
+}
+
+.portfolio-card-header {
+  margin-bottom: 20px;
+}
+
+.portfolio-card-header-text {
+  position: relative;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.portfolio-card-header-text::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 50%;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--clr-gray);
+}
+
+.portfolio-card-chart {
+  margin: 15px auto;
+  width: 90%;
+}
+
+.portfolio-card-values h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.portfolio-amount {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 0.9;
+}
+
+.portfolio-performance {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-performance img {
+  width: 12px;
+}
+

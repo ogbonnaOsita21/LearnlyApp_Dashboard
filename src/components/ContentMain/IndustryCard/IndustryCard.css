@@ -1,0 +1,22 @@
+.industry-card {
+  background-color: var(--clr-blue);
+  padding: 20px;
+  border-radius: 1.5rem;
+  color: var(--clr-dark);
+  transition: var(--transition-default);
+  position: relative;
+}
+
+.industry-chart {
+  margin: 15px auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.industry-card img {
+  width: 20px;
+  position: absolute;
+  right: 20px;
+}

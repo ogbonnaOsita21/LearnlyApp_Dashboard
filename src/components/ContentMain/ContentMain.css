@@ -1,0 +1,63 @@
+/* Account Section */
+.account-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.account-upgrade {
+  width: 40%;
+}
+
+.account-portfolio {
+  width: 60%;
+}
+
+/* Portfolio Section */
+
+.portfolio-section-body {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1.2fr;
+  margin: 15px 0;
+}
+
+.portfolio-section-header h4 {
+  border-bottom: dashed 1px var(--clr-dark);
+}
+
+
+@media screen and (max-width: 850px) {
+  .portfolio-section-body {
+    grid-template-columns: 1fr 1fr;
+  }
+  .account-portfolio {
+    width: 50%;
+  }
+  .account-upgrade {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .account-section {
+    display: block;
+  }
+  .account-portfolio {
+    width: 100%;
+  }
+  .account-upgrade {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolio-section-body {
+    grid-template-columns: 1fr;
+  }
+
+  
+}
