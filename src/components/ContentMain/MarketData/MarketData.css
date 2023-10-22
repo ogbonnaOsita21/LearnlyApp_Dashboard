@@ -2,6 +2,7 @@
   width: 100%;
   border: solid 1px var(--clr-skyblue);
   padding: 0;
+  margin: 40px 0 20px;
 }
 
 .row-header img {
